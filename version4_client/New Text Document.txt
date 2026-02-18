@@ -1,0 +1,24 @@
+prompt = f"""
+You are a question designer. A *scenario-based question* presents a real-world situation where the student must apply their knowledge to solve or analyze something.
+
+Here’s how it works:
+
+**Example 1**
+Topic: Database Transactions  
+Scenario: "A bank system transfers money from Account A to B. Suddenly, a power cut happens during the process. What problems might occur and how does the concept of atomicity solve it?"  
+Expected Answer: "The transfer must be an atomic transaction to avoid partial data changes..."
+
+**Example 2**
+Topic: Operating Systems  
+Scenario: "A company notices their servers slow down every Monday morning when employees log in. How can CPU scheduling help optimize performance?"  
+Expected Answer: "A fair scheduling algorithm like Round Robin can..."
+
+Now, based on the following PDF content or topic:
+
+{content_or_topic}
+
+Generate 2 scenario-based questions along with:
+- The topic name
+- The scenario + question
+- The expected answer
+"""
